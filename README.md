@@ -8,7 +8,7 @@ Usage
 Contributing
 Contact
 
-
+<pre>
 <h3>Features</h3>
 Home: An introduction and brief overview of my portfolio.
 Education: Details about my academic background.
@@ -19,7 +19,7 @@ Contact Me: A form to get in touch with me directly.
 Technologies Used
 HTML5: For the structure of the website.
 CSS3: For styling and layout, including responsive design.
-
+</pre>
 <h3>Usage</h3>
 Modify the HTML files to update the content with your personal information.
 Customize the CSS files in the styles directory to change the appearance of the website.
@@ -33,6 +33,6 @@ If you'd like to contribute to this project, please fork the repository and use 
 <h3>Contact</h3>
 Feel free to reach out if you have any questions or suggestions!
 
-Email: jkantshakya05@example.com
+Email: jkantshakya05@example.com<br>
 LinkedIn: https://www.linkedin.com/in/jai-kant-a45733229/
 GitHub: https://github.com/JK123kant?tab=repositories

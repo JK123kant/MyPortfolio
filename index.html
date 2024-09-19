@@ -6,16 +6,17 @@
     <title>JAI's Portfolio</title>
     <link rel="stylesheet" href="port.css">
     <style>
-        html{
-            scroll-behavior: smooth;
+        body::-webkit-scrollbar{
+            display: none;
         }
-    .left >p{
-        font-size:40px;
-    }
-     h2{
-        text-align: center;
-    }
-    </style>
+        #first{
+            transform: rotate(270deg);
+        }
+        #third{
+            height: 50%;
+            width: 50%;
+        }
+ </style>
     
 </head>
 <body>
@@ -36,7 +37,8 @@
     <main class="RestContent">
         <section id="home" class="home">
             <div class="left">
-                <p>Hi, My Name Is <span class="name">JAI</span> <br>I Am A Web Developer</p>
+                <h2>Welcome to My Portfolio</h2>
+                <p>Here you can find all my projects, experiences, and more.</p>
             </div>
             <div class="right">
                 <img src="/images/my.png" alt="JAI's image">
@@ -89,10 +91,10 @@
             <p class="caption">Won the title of Best volunteer in University Level NSS camp  <br>        
                 Got first position in mono acting in talent search competition. </p>
             <marquee behavior="scroll" direction="left">
-                <img src="./images/jai3.jpg" alt="Extra Curricular Activity 1">
+                <img src="./images/jai3.jpg" id="first" alt="Extra Curricular Activity 1">
                 <img src="./images/jai4.jpg" alt="Extra Curricular Activity 2">
-                <img src="./images/jai5.jpg" alt="Extra Curricular Activity 3">
-                <img src="./images/jai6.jpg" alt="Extra Curricular Activity 4">
+                <img src="./images/jai5.jpg"  alt="Extra Curricular Activity 3">
+                <img src="./images/jai6.jpg"  id="third" alt="Extra Curricular Activity 4">
             </marquee>
             
         </section>
@@ -110,5 +112,20 @@
     <footer>
         <p>&copy; 2024 JAI's Portfolio. All rights reserved.</p>
     </footer>
+    <script>
+        // Get all the navbar links
+    const navLinks = document.querySelectorAll('.navbar nav ul li a');
+    
+    // Add click event listener to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = event.target.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    
+    </script>
 </body>
 </html>
