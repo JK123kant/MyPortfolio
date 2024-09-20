@@ -41,7 +41,7 @@
                 <p>Here you can find all my projects, experiences, and more.</p>
             </div>
             <div class="right">
-                <img src="/images/my.png" alt="JAI's image">
+                <img src="/photos/my.png" alt="JAI's image">
             </div>
         </section>
         <section id="Education" class="content-section">
@@ -78,9 +78,9 @@
         <section id="projects">
             <h2>Projects</h2>
             <p>Here are some of the projects I have worked on:
-                <h3><a href="https://github.com/JK123kant?tab=repositories" target="_blank">Rock Paper Ciser</a></h3>
-                    This is a simple command-line implementation of the classic game Rock Paper Scissors in Java.
-                     The game allows the user to play against the computer, which randomly selects its moves.
+                <h3><a href="https://jk123kant.github.io/todoproject/" target="_blank">To Do List</a></h3>
+                This is a simple to-do list web application built using HTML, CSS, and JavaScript.
+                The to-do list allows users to add, edit, and delete tasks, with the tasks stored in the browser's local storage so they persist even after the page is refreshed.
                     <h3><a href="https://github.com/JK123kant?tab=repositories" target="_blank">Discussion Portal(View On Github)</a></h3>
                     This is a simple web-based discussion portal where users can submit questions and 
                     provide solutions to questions posted by others. The portal is built using HTML, CSS, and JavaScript.
@@ -91,10 +91,10 @@
             <p class="caption">Won the title of Best volunteer in University Level NSS camp  <br>        
                 Got first position in mono acting in talent search competition. </p>
             <marquee behavior="scroll" direction="left">
-                <img src="./images/jai3.jpg" id="first" alt="Extra Curricular Activity 1">
-                <img src="./images/jai4.jpg" alt="Extra Curricular Activity 2">
-                <img src="./images/jai5.jpg"  alt="Extra Curricular Activity 3">
-                <img src="./images/jai6.jpg"  id="third" alt="Extra Curricular Activity 4">
+                <img src="./photos/jai3.jpg" id="first" alt="Extra Curricular Activity 1">
+                <img src="./photos/jai4.jpg" alt="Extra Curricular Activity 2">
+                <img src="./photos/jai5.jpg"  alt="Extra Curricular Activity 3">
+                <img src="./photos/jai6.jpg"  id="third" alt="Extra Curricular Activity 4">
             </marquee>
             
         </section>
@@ -113,18 +113,7 @@
         <p>&copy; 2024 JAI's Portfolio. All rights reserved.</p>
     </footer>
     <script>
-        // Get all the navbar links
-    const navLinks = document.querySelectorAll('.navbar nav ul li a');
     
-    // Add click event listener to each link
-    navLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default link behavior
-            const targetId = event.target.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
     
     </script>
 </body>
